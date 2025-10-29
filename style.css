@@ -1,18 +1,17 @@
-/* === Basic Page Setup === */
+/* === Background === */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: #ffffff;
+  color: white;
   text-align: center;
-  background-image: url('https://thumbs.dreamstime.com/b/small-green-plant-grows-black-computer-keyboard-keys-symbolizing-innovation-resilience-nature-s-victory-377976612.jpg');
+  background-image: url('https://images.stockcake.com/public/4/3/5/435420d5-72a8-454d-a5c7-7c4a8faed262_large/laptop-nature-display-stockcake.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* === Overlay for readability === */
+/* === Overlay to make text readable === */
 body::before {
   content: "";
   position: fixed;
@@ -28,94 +27,59 @@ body::before {
 header {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 26px;
 }
 
-/* === Navigation Bar === */
-nav ul {
-  list-style: none; /* removes numbers or bullets */
-  margin: 10px 0 0 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+/* === Navigation === */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 6px;
-  transition: background 0.3s, color 0.3s;
-  font-weight: 500;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
 nav a:hover {
-  background: #00d4ff;
-  color: #000000;
+  color: #00d4ff;
 }
 
-/* === Main Content === */
+/* === Main Section === */
 main {
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome {
+  margin: 100px auto;
   max-width: 700px;
   background: rgba(255, 255, 255, 0.15);
   padding: 30px;
   border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.welcome h2 {
-  font-size: 26px;
-  margin-bottom: 15px;
+main h2 {
   color: #00e5ff;
+  margin-bottom: 15px;
 }
 
-.welcome p {
+main p {
   font-size: 18px;
   line-height: 1.6;
-  color: #f1f1f1;
+  color: #f5f5f5;
 }
 
 /* === Footer === */
 footer {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   padding: 15px 0;
   font-size: 14px;
   position: fixed;
   width: 100%;
   bottom: 0;
-  left: 0;
 }
 
-/* === Responsive Design === */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 20px;
-  }
-  .welcome {
-    padding: 15px;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  nav a {
-    display: block;
-    margin: 6px 0;
-  }
-}
 
