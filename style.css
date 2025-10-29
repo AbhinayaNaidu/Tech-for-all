@@ -1,18 +1,18 @@
-/* --- Background and base setup --- */
+/* === Basic Page Setup === */
 body {
-  background-image: url('https://images.stockcake.com/public/4/3/5/435420d5-72a8-454d-a5c7-7c4a8faed262_large/laptop-nature-display-stockcake.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #ffffff;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #ffffff;
   text-align: center;
+  background-image: url('https://thumbs.dreamstime.com/b/small-green-plant-grows-black-computer-keyboard-keys-symbolizing-innovation-resilience-nature-s-victory-377976612.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-/* --- Overlay to make text readable --- */
+/* === Overlay for readability === */
 body::before {
   content: "";
   position: fixed;
@@ -20,11 +20,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
-/* --- Header section --- */
+/* === Header === */
 header {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px 0;
@@ -37,40 +37,50 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* --- Navigation --- */
-nav {
-  margin-top: 10px;
+/* === Navigation Bar === */
+nav ul {
+  list-style: none; /* removes numbers or bullets */
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
-  margin: 0 12px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #00d4ff;
+  background: #00d4ff;
+  color: #000000;
 }
 
-/* --- Main content --- */
+/* === Main Content === */
 main {
   padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
   max-width: 700px;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.15);
-  padding: 25px;
+  padding: 30px;
   border-radius: 12px;
   backdrop-filter: blur(6px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .welcome h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 15px;
   color: #00e5ff;
 }
@@ -81,7 +91,7 @@ main {
   color: #f1f1f1;
 }
 
-/* --- Footer --- */
+/* === Footer === */
 footer {
   background: rgba(0, 0, 0, 0.7);
   padding: 15px 0;
@@ -92,7 +102,7 @@ footer {
   left: 0;
 }
 
-/* --- Responsive design --- */
+/* === Responsive Design === */
 @media (max-width: 600px) {
   header h1 {
     font-size: 20px;
@@ -100,8 +110,12 @@ footer {
   .welcome {
     padding: 15px;
   }
+  nav ul {
+    flex-direction: column;
+  }
   nav a {
     display: block;
     margin: 6px 0;
   }
 }
+
