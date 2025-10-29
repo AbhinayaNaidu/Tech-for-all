@@ -4,7 +4,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: white;
   text-align: center;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_R4FqbPufQpdk_uNfn7PuE6uQ9lfQ704Pw&s');
+  background-image: url('https://t4.ftcdn.net/jpg/06/50/26/79/360_F_650267966_nqsbFi0dSDnJm1wI6m6beP9cUebNOBxM.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ nav a:hover {
 
 /* === Main Section === */
 main {
-  text-align: left; /* align text to left */
+  text-align: left;
   margin: 100px auto;
   max-width: 800px;
   background: rgba(255, 255, 255, 0.15);
@@ -77,20 +77,22 @@ main p {
   margin-bottom: 15px;
 }
 
-/* Ordered and unordered lists */
+/* === Ordered and unordered lists === */
 main ol, main ul {
-  list-style-position: inside; /* keeps numbers visible */
-  margin-left: 20px; /* small gap on left for clean look */
-  padding-left: 0;
+  list-style-position: outside; /* keeps numbers aligned properly */
+  margin-left: 35px; /* small indent for numbers */
+  padding-left: 10px;
   color: #fff;
 }
 
-/* List items */
+/* === Fix for clean text alignment in lists === */
 main li {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 10px;
   color: #f1f1f1;
+  padding-left: 5px;       /* small space after number */
+  text-indent: 0;          /* ensures wrapped lines align neatly */
 }
 
 /* === Footer === */
