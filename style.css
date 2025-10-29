@@ -4,7 +4,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: white;
   text-align: center;
-  background-image: url('https://images.stockcake.com/public/4/3/5/435420d5-72a8-454d-a5c7-7c4a8faed262_large/laptop-nature-display-stockcake.jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_R4FqbPufQpdk_uNfn7PuE6uQ9lfQ704Pw&s');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,8 +52,9 @@ nav a:hover {
 
 /* === Main Section === */
 main {
+  text-align: left; /* align text to left */
   margin: 100px auto;
-  max-width: 700px;
+  max-width: 800px;
   background: rgba(255, 255, 255, 0.15);
   padding: 30px;
   border-radius: 12px;
@@ -61,15 +62,35 @@ main {
   backdrop-filter: blur(6px);
 }
 
+/* Headings inside main */
 main h2 {
   color: #00e5ff;
   margin-bottom: 15px;
+  text-align: center;
 }
 
+/* Paragraphs inside main */
 main p {
   font-size: 18px;
   line-height: 1.6;
   color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+/* Ordered and unordered lists */
+main ol, main ul {
+  list-style-position: inside; /* keeps numbers visible */
+  margin-left: 20px; /* small gap on left for clean look */
+  padding-left: 0;
+  color: #fff;
+}
+
+/* List items */
+main li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #f1f1f1;
 }
 
 /* === Footer === */
@@ -80,6 +101,5 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  color: #ddd;
 }
-
-
