@@ -1,41 +1,107 @@
+/* --- Background and base setup --- */
 body {
-  font-family: Arial, sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1526318472351-bc3d6b1b2028?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.stockcake.com/public/4/3/5/435420d5-72a8-454d-a5c7-7c4a8faed262_large/laptop-nature-display-stockcake.jpg');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  color: #000;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #ffffff;
   margin: 0;
   padding: 0;
-}
-header {
-  background-color: rgba(0, 119, 204, 0.9);
-  color: white;
-  padding: 15px;
   text-align: center;
 }
+
+/* --- Overlay to make text readable --- */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+  z-index: -1;
+}
+
+/* --- Header section --- */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* --- Navigation --- */
 nav {
   margin-top: 10px;
 }
+
 nav a {
-  margin: 0 10px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
-nav a.active, nav a:hover {
-  text-decoration: underline;
+
+nav a:hover {
+  color: #00d4ff;
 }
+
+/* --- Main content --- */
 main {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.85);
-  margin: 20px;
-  border-radius: 10px;
+  padding: 80px 20px;
 }
+
+.welcome {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #00e5ff;
+}
+
+.welcome p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* --- Footer --- */
 footer {
-  background-color: #e6f0ff;
-  text-align: center;
-  padding: 10px;
-  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 0;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+  .welcome {
+    padding: 15px;
+  }
+  nav a {
+    display: block;
+    margin: 6px 0;
+  }
 }
