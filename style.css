@@ -77,14 +77,15 @@ main li {
 
 /* === Footer === */
 footer {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 15px 0;
-  font-size: 14px;
+  background: rgba(200, 200, 200, 0.7);
+  padding: 6px 0;        /* reduced height */
+  font-size: 13px;       /* slightly smaller text */
   position: fixed;
   width: 100%;
   bottom: 0;
-  color: #333;
+  color: #111 !important;
 }
+
 body::before {
   background: rgba(255, 255, 255, 0.15) !important;
 }
