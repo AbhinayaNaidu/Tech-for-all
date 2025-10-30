@@ -85,3 +85,11 @@ footer {
   bottom: 0;
   color: #333;
 }
+body::before {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+header, footer {
+  background: rgba(255, 255, 255, 0.7) !important;
+  color: #000 !important;
+}
