@@ -90,7 +90,7 @@ body::before {
 }
 
 header, footer {
-  background: rgba(245, 245, 245, 0.7) !important;
+background: rgba(180, 180, 180, 0.8);
   color: #111 !important;
 }
 
