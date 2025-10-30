@@ -86,11 +86,11 @@ footer {
   color: #333;
 }
 body::before {
-  background: rgba(255, 245, 230, 0.3) !important; /* soft peach tint */
+  background: rgba(255, 255, 255, 0.15) !important;
 }
 
 header, footer {
-  background: rgba(255, 228, 196, 0.7) !important;
-  color: #4b2e05 !important;
+  background: rgba(245, 245, 245, 0.7) !important;
+  color: #111 !important;
 }
 
