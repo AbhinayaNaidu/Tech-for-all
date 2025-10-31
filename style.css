@@ -4,13 +4,13 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
   text-align: center;
-  background-image: url('https://i.postimg.cc/tCQQqRJ3/background-jpg.jpg');
+  background-image: url('https://i.postimg.cc/ncgkbMhG/Chat-GPT-Image-Oct-31-2025-06-10-18-PM.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+s
 
 /* === Overlay (light tint instead of dark) === */
 body::before {
