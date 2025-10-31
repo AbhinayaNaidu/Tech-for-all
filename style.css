@@ -4,7 +4,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
   text-align: center;
-  background-image: url('tech/background.jpg'); /* ✅ your local image */
+  background-image: url('./tech/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
