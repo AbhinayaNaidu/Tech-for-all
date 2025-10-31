@@ -4,12 +4,13 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
   text-align: center;
-  background-image: url('./tech/background.jpg');
+  background-image: url('https://i.postimg.cc/tCQQqRJ3/background-jpg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 
 /* === Overlay (light tint instead of dark) === */
 body::before {
