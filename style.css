@@ -4,7 +4,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
   text-align: center;
-  background-image: url('https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/dq/media/media_files/2024/12/09/RKMRk2x5b4SripWOR25n.png');
+  background-image: url('tech/background.jpg'); /* ✅ your local image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,15 +19,15 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.4); /* light overlay */
+  background: rgba(255, 255, 255, 0.15) !important; /* adjusted light overlay */
   z-index: -1;
 }
 
 /* === Header === */
 header {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(180, 180, 180, 0.8);
   padding: 20px 0;
-  color: #333;
+  color: #111 !important;
 }
 
 header h1 {
@@ -77,21 +77,11 @@ main li {
 
 /* === Footer === */
 footer {
-  background: rgba(200, 200, 200, 0.7);
-  padding: 6px 0;        /* reduced height */
-  font-size: 13px;       /* slightly smaller text */
+  background: rgba(180, 180, 180, 0.8);
+  padding: 3px 0;         /* ✅ reduced footer box size */
+  font-size: 12px;        /* ✅ smaller text */
   position: fixed;
   width: 100%;
   bottom: 0;
   color: #111 !important;
 }
-
-body::before {
-  background: rgba(255, 255, 255, 0.15) !important;
-}
-
-header, footer {
-background: rgba(180, 180, 180, 0.8);
-  color: #111 !important;
-}
-
